@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <style>
+      h2 {
+        animation: spin 3s linear infinite;
+        display: inline-block;
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(90deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <h2 id="hello">Hello</h2>
+    <input type="text" id="t1">
+    <button onclick="change()">submit</button>
+    <script>
+      function change() {
+        var input = document.getElementById("t1");
+        var hello = document.getElementById("hello");
+        hello.innerHTML = input.value;
+      }
+    </script>
+  </body>
+</html>

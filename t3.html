@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <button onclick="updateCount()">Add Number</button>
+    <ul id="countList">
+    </ul>
+    <script>
+      var count = 0;
+      function updateCount() {
+        count++;
+        var countList = document.getElementById("countList");
+        var countItem = document.createElement("li");
+        countItem.innerHTML = count;
+        countList.appendChild(countItem);
+      }
+    </script>
+  </body>
+</html>
